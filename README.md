@@ -59,8 +59,8 @@ Authorization: Bearer SEU_TOKEN
 3. Clone o repositório e instale as dependências:
 
 ```bash
-git clone https://github.com/lorrainysilvap/produtos-api.git
-cd produtos-api
+git clone https://github.com/lorrainysilvap/api-produtos.git
+cd api-produtos
 npm install
 ```
 
@@ -79,7 +79,7 @@ A coleção do Postman está no arquivo `API Produtos.postman_collection.json`. 
 
 ## Deploy na AWS
 
-- Instância EC2 com Ubuntu 24.04 (nível gratuito), com IP elástico.
+- Instância EC2 com Ubuntu 26.04 (nível gratuito), com IP elástico.
 - Acesso ao servidor por SSH com par de chaves `.pem`.
 - Security Group liberando apenas a porta 22 (SSH, restrita ao IP da equipe) e a porta 3000 (API). A porta do banco (5432) não fica exposta.
 - Variáveis sensíveis ficam no arquivo `.env` do servidor, fora do repositório.
@@ -97,5 +97,5 @@ Endereço da API: `http://77.113.143.110:3000`
 
 | Integrante | Contribuição |
 | --- | --- |
-| Lorrainy | Estrutura do projeto, banco de dados, rotas do CRUD, coleção do Postman |
-| Guilherme| Autenticação JWT, deploy na AWS (EC2, SSH, Security Group, pm2) |
+| Lorrainy | Estrutura do projeto, banco de dados, rotas do CRUD, autenticação JWT, coleção do Postman, README |
+| Guilherme | Deploy na AWS (EC2, par de chaves SSH, Security Group, IP elástico, PostgreSQL e pm2 no servidor), atualização do README |
