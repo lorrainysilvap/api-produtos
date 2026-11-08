@@ -85,7 +85,7 @@ A coleção do Postman está no arquivo `API Produtos.postman_collection.json`. 
 - Variáveis sensíveis ficam no arquivo `.env` do servidor, fora do repositório.
 - A API roda com pm2, que reinicia o processo automaticamente.
 
-Endereço da API: `http://[IP_ELASTICO]:3000`
+Endereço da API: `http://77.113.143.110:3000`
 
 ## Segurança
 
